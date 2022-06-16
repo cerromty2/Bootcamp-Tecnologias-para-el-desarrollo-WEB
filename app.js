@@ -18,7 +18,7 @@ router.get("/", function (req, res) {
 
 app.use(router);
 
-mongoose.connect("mongodb://localhost:27017/Directorio", function (err, res) {
+mongoose.connect("mongodb://localhost:27017", function (err, res) {
   if (err) {
     console.log("ERROR: connecting to Database. " + err);
   }
